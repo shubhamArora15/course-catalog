@@ -2,7 +2,7 @@
     
     <!-- Sidebar section -->
     <div class="sidebar">
-        <app-sidebar></app-sidebar>
+        <app-sidebar (category) = "filterCategoryCourse($event)" (search) = "filterSearchCourse($event)"></app-sidebar>
     </div>
 
     <!-- Courses list -->

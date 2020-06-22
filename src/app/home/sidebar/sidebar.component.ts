@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
+  @Output() category = new EventEmitter();
+
+  @Output() search = new EventEmitter();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  setCategory(category) {
+    this.category.emit(category)
+  }
+
+  setSearchValue(value) {
+    this.search.emit(value)
   }
 
 }

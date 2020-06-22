@@ -1,8 +1,9 @@
 <p>Category</p>
-
-<ul>
-    <li><span> <input type="radio" name="" id=""></span> All</li>
-    <li><span><input type="radio" name="" id=""></span>Software</li>
-    <li><span><input type="radio" name="" id=""></span>Hardware</li>
-    <li><span><input type="radio" name="" id=""></span>computer</li>
-</ul>
+<form>
+    <ul >
+        <li><span><input type="radio" name="all" [(ngModel)]="category" value="all" id="a" (change)="onCategorySelected($event)"></span> All</li>
+        <li><span><input type="radio" name="sw" [(ngModel)]="category" value="b" id="b" (change)="onCategorySelected($event)"></span>Software</li>
+        <li><span><input type="radio" name="gw" [(ngModel)]="category" value="c" id="c" (change)="onCategorySelected($event)"></span>Hardware</li>
+        <li><span><input type="radio" name="co" [(ngModel)]="category" value="d" id="d" (change)="onCategorySelected($event)"></span>computer</li>
+    </ul>
+</form>

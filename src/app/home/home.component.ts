@@ -10,8 +10,10 @@ import { HomeService } from './home.service';
 export class HomeComponent implements OnInit {
 
 
-  constructor(private course: HomeService) {
+  categoryForFilter: any;
+  searchForFilter: any;
 
+  constructor(private course: HomeService) {
   }
 
   ngOnInit(): void {
@@ -20,6 +22,38 @@ export class HomeComponent implements OnInit {
 
     // Get all courses
     this.getCourses();
+  }
+
+
+  // get Filter courses after event
+  filterCategoryCourse(value) {
+    this.categoryForFilter = value;
+    this.filter()
+  }
+
+  // get filter search keywords after event
+  filterSearchCourse(value) {
+    this.searchForFilter = value;
+    this.filter()
+  }
+
+
+  // Final filters for display courses
+  filter() {
+
+    switch (this.searchForFilter, this.categoryForFilter) {
+      case (this.searchForFilter && !this.categoryForFilter):
+        console.log(this.searchForFilter, "1")
+        break;
+      case (!this.searchForFilter && this.categoryForFilter):
+        console.log(this.categoryForFilter, "2")
+        break;
+      case (this.searchForFilter && this.categoryForFilter):
+        console.log(this.searchForFilter, this.categoryForFilter, "3");
+        break;
+      default:
+        break;
+    }
   }
 
   getCategories() {
