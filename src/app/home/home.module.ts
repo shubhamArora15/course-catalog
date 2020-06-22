@@ -5,13 +5,12 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SearchBoxComponent } from './search-box/search-box.component';
-import { CoursesComponent } from './courses/courses.component';
 import { CoursesListComponent } from './courses-list/courses-list.component';
 import { CoursesCategoriesComponent } from './courses-categories/courses-categories.component';
 
 
 @NgModule({
-  declarations: [HomeComponent, SidebarComponent, SearchBoxComponent, CoursesComponent, CoursesListComponent, CoursesCategoriesComponent],
+  declarations: [HomeComponent, SidebarComponent, SearchBoxComponent, CoursesListComponent, CoursesCategoriesComponent],
   imports: [
     CommonModule,
     HomeRoutingModule
