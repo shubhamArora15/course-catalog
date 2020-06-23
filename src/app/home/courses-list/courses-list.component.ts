@@ -15,7 +15,6 @@ export class CoursesListComponent implements OnInit {
   constructor() {
     // Setting dummy courses list
     this.coursesList = courses;
-    console.log(this.coursesList)
 
   }
 

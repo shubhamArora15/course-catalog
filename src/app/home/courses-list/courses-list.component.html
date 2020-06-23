@@ -1,18 +1,39 @@
 <!-- To display total course count for registration -->
-<p>{{coursesList?.length || '0'}} courses open for registration</p>
+<p>{{(coursesList | coursesFilter : keyword : category)?.length || '0'}} courses open for registration</p>
 
-{{category}}  {{keyword}}
 <div class="courses">
     <!-- Itrating over courses list dynamically -->
-    <div class="card" *ngFor="let course of coursesList">
-        <h5>{{course?.title}}</h5>
-        <h6>{{course.instructor}}</h6>
+    <div class="card" *ngFor="let course of coursesList | coursesFilter : keyword : category">
+        <i class="fa fa-address-book-o" aria-hidden="true"></i>
+        <div class="first">
+            <div class="left">
+                <img src="../../../assets/images/profile.png"  alt="profile" srcset="">
+            </div>
+            <div class="right">
+                <h5>{{course?.title}}</h5>
+                <h6>{{course.instructor}}</h6>
+            </div>
+        </div>
+        <div class="second">
+            <div class="left">
+                <img src="../../../assets/images/info.png" alt="desc">
+            </div>
+            <div class="right">
+                <p>
+                    {{course.description}}
+                </p>
+            </div>
+        </div>
+        <div class="third">
+            <div class="left">
+                <img src="../../../assets/images/calander.png" alt="timeline">
+            </div>
+            <div class="right">
+                <h6>{{course?.timeline?.status}}</h6>
+                <h6>{{course?.timeline?.start_end_date}}</h6>
+                <h6>{{course?.timeline?.duration}}</h6>
+            </div>
+        </div>
         <p>
-            {{course.description}}
-        </p>
-        <p>
-        <h6>{{course?.timeline?.status}}</h6>
-        <h6>{{course?.timeline?.start_end_date}}</h6>
-        <h6>{{course?.timeline?.duration}}</h6>
     </div>
 </div>
