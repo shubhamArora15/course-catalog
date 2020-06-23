@@ -1,5 +1,13 @@
 nav {
     display: flex;
-    background-color: gainsboro;
+    background-color: #F6F7F7;
     justify-content: flex-end;
+    padding : 8px 2px;
+    color: #9E9E9E;
+    border: 1px solid #9E9E9E;
+    margin-bottom: 15px;
 }
+    nav span {
+        margin-left: 4px;
+        text-decoration: underline;
+    }
