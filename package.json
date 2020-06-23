@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "production": "ng build --prod & http-server ./dist/course-catalog/",
+    "production": "echo 'Please wait while dist folder ready' & ng build --prod & http-server ./dist/course-catalog/",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

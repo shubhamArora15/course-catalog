@@ -38,7 +38,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consequatur magni 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consequatur magni dolor eligendi quis amet blanditiis hic in ipsam inventore sint a, necessitatibus fuga odio ad. In beatae minus asperiores.`,
     timeline: {
         status: 'Pre-registration',
-        start_end_date: 'March 20 - July 20',
+        start_end_date: 'Feb 20 - July 20',
         duration: '26 weeks, 4 hours per day'
     },
     category: 'engineering'
@@ -49,18 +49,18 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consequatur magni 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consequatur magni dolor eligendi quis amet blanditiis hic in ipsam inventore sint a, necessitatibus fuga odio ad. In beatae minus asperiores.`,
     timeline: {
         status: 'Pre-registration',
-        start_end_date: 'March 20 - July 20',
+        start_end_date: 'July 20 - Aug 20',
         duration: '12 weeks, 4 hours per day'
     },
     category: 'mathematics'
 }, {
     title: 'Course 5',
-    instructor: 'Prof D',
+    instructor: 'Prof E',
     description: `
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consequatur magni dolor eligendi quis amet blanditiis hic in ipsam inventore sint a, necessitatibus fuga odio ad. In beatae minus asperiores.`,
     timeline: {
         status: 'Pre-registration',
-        start_end_date: 'March 20 - July 20',
+        start_end_date: 'April 20 - July 20',
         duration: '13 weeks, 4 hours per day'
     },
     category: 'mathematics'
