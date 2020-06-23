@@ -13,5 +13,5 @@ Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app 
 
 ## Production server
 
-Run `npm run production` for a dev server. Navigate to `http://localhost:4201/`. The app will not reload if you change any of the source files.
+Run `npm run production` for a dev server. Navigate to `http://127.0.0.1:8080/`. The app will not reload if you change any of the source files.
 
