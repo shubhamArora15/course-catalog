@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Input } from '@angular/core';
+import { courses } from '../../models/course.model'
 @Component({
   selector: 'app-courses-list',
   templateUrl: './courses-list.component.html',
@@ -7,7 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CoursesListComponent implements OnInit {
 
-  constructor() { }
+  @Input() category : string;
+  @Input() keyword : string;
+
+  coursesList:any;
+
+  constructor() {
+    // Setting dummy courses list
+    this.coursesList = courses;
+    console.log(this.coursesList)
+
+  }
 
   ngOnInit(): void {
   }

@@ -1,32 +1,18 @@
-<p>4 courses open for registration</p>
+<!-- To display total course count for registration -->
+<p>{{coursesList?.length || '0'}} courses open for registration</p>
 
+{{category}}  {{keyword}}
 <div class="courses">
-    <div class="card">
-        <h6>Title</h6>
-        <p>Instructor</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dignissimos numquam ducimus reprehenderit
-            natus aut et unde sint voluptas praesentium, dolore, laboriosam enim. Ea cumque quasi quis consectetur
-            debitis! Molestiae?</p>
-    </div>
-    <div class="card">
-        <h6>Title</h6>
-        <p>Instructor</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dignissimos numquam ducimus reprehenderit
-            natus aut et unde sint voluptas praesentium, dolore, laboriosam enim. Ea cumque quasi quis consectetur
-            debitis! Molestiae?</p>
-    </div>
-    <div class="card">
-        <h6>Title</h6>
-        <p>Instructor</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dignissimos numquam ducimus reprehenderit
-            natus aut et unde sint voluptas praesentium, dolore, laboriosam enim. Ea cumque quasi quis consectetur
-            debitis! Molestiae?</p>
-    </div>
-    <div class="card">
-        <h6>Title</h6>
-        <p>Instructor</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dignissimos numquam ducimus reprehenderit
-            natus aut et unde sint voluptas praesentium, dolore, laboriosam enim. Ea cumque quasi quis consectetur
-            debitis! Molestiae?</p>
+    <!-- Itrating over courses list dynamically -->
+    <div class="card" *ngFor="let course of coursesList">
+        <h5>{{course?.title}}</h5>
+        <h6>{{course.instructor}}</h6>
+        <p>
+            {{course.description}}
+        </p>
+        <p>
+        <h6>{{course?.timeline?.status}}</h6>
+        <h6>{{course?.timeline?.start_end_date}}</h6>
+        <h6>{{course?.timeline?.duration}}</h6>
     </div>
 </div>
