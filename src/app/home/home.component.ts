@@ -36,16 +36,15 @@ export class HomeComponent implements OnInit {
   }
 
 
-  getCategories() {
-    this.course.getCategories().subscribe(data => {
-      // console.log(data);
-    })
-  }
+  // getCategories() {
+  //   this.course.getCategories().subscribe(data => {
+  //     // console.log(data);
+  //   })
+  // }
 
-  getCourses() {
-    this.course.getCategories().subscribe(data => {
-      // console.log(data);
-    })
-  }
+  // getCourses() {
+  //   this.course.getCategories().subscribe(data => {
+  //   })
+  // }
 
 }
