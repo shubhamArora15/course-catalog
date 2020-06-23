@@ -1,5 +1,9 @@
 <div class="searchbox">
     <p>Search For keywords</p>
-    
-    <input type="text" [(ngModel)]="search" (input)="onSearch($event)" />
+    <div class="left">
+        <img src="../../../assets/images/search.png" alt="">
+    </div>
+    <div class="right">
+        <input type="text" [(ngModel)]="search" (input)="onSearch($event)" />
+    </div>
 </div>
