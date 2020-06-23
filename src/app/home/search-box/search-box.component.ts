@@ -18,7 +18,7 @@ export class SearchBoxComponent implements OnInit {
   }
 
   onSearch(event) {
-    this.searchValue.emit(event.target.value);
+    this.searchValue.emit(this.search);
   }
 
 }

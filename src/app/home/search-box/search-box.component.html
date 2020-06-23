@@ -1,3 +1,5 @@
-<p>Search For keywords</p>
-
-<input type="search" [(ngModel)]="search" (input)="onSearch($event)" />
+<div class="searchbox">
+    <p>Search For keywords</p>
+    
+    <input type="text" [(ngModel)]="search" (input)="onSearch($event)" />
+</div>
